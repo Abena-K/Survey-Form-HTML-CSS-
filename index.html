@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang=""en>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">African Cultural Center USA Survey Form</h1>
+    <p id="description"><i>Thank you for taking the time to help us improve our African Clothing Collection</i></p>
+    <form id="survey-form">
+      
+      <!--Personal Details-->
+
+      <label for="name" id="name-label">Name</label> 
+        <input type="text" id="name" name="name"  placeholder="Enter your name" required />
+      <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      
+      <label for="age" id="age-label">Age (Optional)</label>
+        <input type="number" id="age" name="age" min="7" max="120" placeholder="Enter your age" />
+      <label for="tel" id="number-label">Phone number (Optional)</label>
+        <input type="tel" id="tel" name="tel"  placeholder="Enter your number" />
+      
+
+    
+      <label for="dropdown">Which option best describes what you bought?</label>
+      <select id="dropdown" name="dropdown">
+        <option value="">(Select one)</option>
+        <option value="1">Women's wear</option>
+        <option value="2">Men's wear</option>
+        <option value="3">Kids wear</option>
+        <option value="4">Prefer not to say</option> 
+      </select>
+      <br>
+  
+      <label for="recommend">Would you recommend our African Clothing Collection to a friend? </label>
+      <label for="definately">
+        <input type="radio" id="definately" value="definately" name="referral" class="inline" />Definately
+      </label>
+      <label for="maybe">
+        <input type="radio" id="maybe" value="maybe" name="referral" class="inline" />Maybe
+      </label>
+      <label for="unsure">
+        <input type="radio" id="unsure" value="unsure" name="referral" class="inline" />Not sure
+      </label>
+    
+      <br>
+  
+      <label for="designs">What African Print designs/styles would you like to see in our Clothing Collection? (Check all that apply)</label>
+      <label for="maxi">
+        <input type="checkbox" id="maxi" name="designs" value="maxi" class="inline" />Maxi Dresses
+      </label>
+      <label for="casual">
+        <input type="checkbox" id="casual" name="designs" value="casual" class="inline" />Casual Dresses
+      </label>
+      <label for="bodycon">
+        <input type="checkbox" id="bodycon" name="designs" value="bodycon" class="inline" />Bodycon Dresses
+      </label>
+      <label for="cocktail">
+        <input type="checkbox" id="cocktail" name="designs" value="cocktail" class="inline" />Cocktail Dresses
+      </label>
+      <label for="sundresses">
+        <input type="checkbox" id="sundresses" name="designs" value="sundresses" class="inline" />Sun Dresses
+      </label>
+      <label for="a-line">
+        <input type="checkbox" id="a-line" name="designs" value="a-line" class="inline" />A-line Dresses
+      </label>
+      
+      <br>
+
+      <label for="favorite-wear">What is your favorite dress code of our African Clothing Collection? (Check all that apply)</label>
+      <label for="casual-wear">
+        <input type="checkbox" id="casual-wear" value="casual-wear" name="favorite-dress" class="inline" />Casual wear
+      </label>
+      <label for="office-wear">
+        <input type="checkbox" id="office-wear" value="office-wear"name="favorite-dress" class="inline" />Office wear
+      </label>
+      <label for="beach-wear">
+        <input type="checkbox" id="beach-wear" value="beach-wear" name="favorite-dress" class="inline" />Beach wear
+      </label>
+      <label for="other">
+        <input type="checkbox" id="other" value="other" name="favorite-dress" class="inline" />Other
+      </label>
+      
+      <br>
+
+      <label for="comments">Any comments/suggestions?</label>
+        <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
+        <br>
+
+      <input type="submit" value="Submit" id="submit" />  
+    </form>
+  </body>
+</html>
